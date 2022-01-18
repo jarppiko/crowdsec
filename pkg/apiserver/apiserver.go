@@ -106,7 +106,7 @@ func NewServer(config *csconfig.LocalApiServerCfg) (*APIServer, error) {
 
 	logFile := ""
 	if config.LogMedia == "file" {
-		logFile = fmt.Sprintf("%s/crowdsec_api.log", config.LogDir)
+		logFile = fmt.Sprintf("%s/crowdsec-api.log", config.LogDir)
 	}
 
 	if log.GetLevel() < log.DebugLevel {
